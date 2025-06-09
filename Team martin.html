@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Martin - Driver Monitoring System</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('https://images.unsplash.com/photo-1504215680853-026ed2a45def');
+      background-size: cover;
+      background-position: center;
+    }
+    .bg-blur {
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.75);
+    }
+  </style>
+</head>
+
+<body class="text-gray-800">
+  <div class="min-h-screen p-6 bg-blur">
+    <header class="text-center mb-12">
+      <h1 class="text-5xl font-extrabold text-blue-800">🚗 Team Martin</h1>
+      <p class="text-xl mt-2">Driver Monitoring & Emergency Response System</p>
+    </header>
+
+    <section class="grid md:grid-cols-2 gap-8 mb-12">
+      <div class="p-6 bg-white rounded-2xl shadow-xl">
+        <h2 class="text-2xl font-bold mb-2">❓ Problem Statement</h2>
+        <p>Thousands of accidents happen due to driver drowsiness or unconsciousness with no fallback on isolated roads. Our system detects real-time signs and responds immediately.</p>
+      </div>
+      <div class="p-6 bg-white rounded-2xl shadow-xl">
+        <h2 class="text-2xl font-bold mb-2">💡 Our Idea</h2>
+        <ul class="list-disc list-inside">
+          <li>Webcam eye tracking for drowsiness/unconsciousness</li>
+          <li>Emergency protocols & autopilot simulation</li>
+          <li>Azure Maps-based alert system</li>
+          <li>Optional emergency contact calling</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="bg-white p-6 rounded-2xl shadow-xl mb-12">
+      <h2 class="text-2xl font-bold mb-4">🧱 System Components</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-blue-100 p-4 rounded-xl">✔ Driver Monitoring — Python + OpenCV + MediaPipe</div>
+        <div class="bg-blue-100 p-4 rounded-xl">✔ Emergency Logic — Python</div>
+        <div class="bg-blue-100 p-4 rounded-xl">✔ Autopilot Simulation — Python / Pygame</div>
+        <div class="bg-blue-100 p-4 rounded-xl">✔ Alerts — Azure Maps API</div>
+        <div class="bg-blue-100 p-4 rounded-xl">✔ Web Interface — Azure Maps, JS</div>
+        <div class="bg-blue-100 p-4 rounded-xl">✔ Integration — Flask + HTML/JS</div>
+      </div>
+    </section>
+
+    <section class="bg-white p-6 rounded-2xl shadow-xl mb-12">
+      <h2 class="text-2xl font-bold mb-4">🏆 Why Our Solution Works Best</h2>
+      <ul class="list-disc list-inside">
+        <li>Low-cost with basic hardware</li>
+        <li>Real-time video analysis + cloud alerts</li>
+        <li>Modular, scalable, and integration-ready</li>
+      </ul>
+    </section>
+
+    <section class="grid md:grid-cols-2 gap-8 mb-12">
+      <div class="bg-white p-6 rounded-2xl shadow-xl">
+        <h2 class="text-2xl font-bold mb-2">🔄 How It Works</h2>
+        <ol class="list-decimal list-inside space-y-1">
+          <li>Webcam detects EAR (eye aspect ratio)</li>
+          <li>Drowsiness >5s or no face >3s triggers emergency</li>
+          <li>Simulated autopilot logs actions</li>
+          <li>Azure Map marks emergency location</li>
+          <li>Dashboard displays live status & users nearby</li>
+        </ol>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-xl">
+        <h2 class="text-2xl font-bold mb-2">🧪 Prototype Preview</h2>
+        <ul class="list-disc list-inside">
+          <li>Working detection script with webcam</li>
+          <li>Flask frontend + Azure Maps integration</li>
+          <li>Simulated emergency & location marker</li>
+          <li>Pygame autopilot animation (optional)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="bg-white p-6 rounded-2xl shadow-xl mb-12">
+      <h2 class="text-2xl font-bold mb-4">🚀 Future Plans</h2>
+      <ul class="list-disc list-inside">
+        <li>Real GPS module integration</li>
+        <li>Cloud database (Firebase / Azure Cosmos DB)</li>
+        <li>Emergency calls using Twilio or Truecaller APIs</li>
+        <li>Driver authentication via face recognition</li>
+        <li>Hardware integration with car brands</li>
+      </ul>
+    </section>
+
+    <footer class="text-center py-4 text-sm text-gray-600">
+      &copy; 2025 Team Martin. All rights reserved.
+    </footer>
+  </div>
+</body>
+
+</html>
