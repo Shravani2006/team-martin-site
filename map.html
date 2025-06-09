@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Map | Team Martin</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between px-8 py-4 bg-white shadow">
+    <div class="flex items-center space-x-3">
+      <img src="https://img.icons8.com/color/48/000000/artificial-intelligence.png" class="h-8 w-8"/>
+      <span class="text-xl font-bold">Team Martin</span>
+    </div>
+    <div class="space-x-6">
+      <a href="index.html" class="hover:text-orange-500">Home</a>
+      <a href="monitoring.html" class="hover:text-orange-500">Monitoring</a>
+      <a href="emergency.html" class="hover:text-orange-500">Emergency</a>
+      <a href="map.html" class="text-orange-500 font-medium">Map</a>
+    </div>
+    <img src="https://i.pravatar.cc/40" class="h-10 w-10 rounded-full"/>
+  </nav>
+
+  <!-- Map Dashboard -->
+  <div class="max-w-7xl mx-auto px-6 py-10 grid lg:grid-cols-3 gap-6">
+    
+    <!-- Left: Map -->
+    <div class="lg:col-span-2 bg-white p-4 rounded-lg shadow">
+      <h2 class="text-lg font-semibold mb-2">Incident Location</h2>
+      <img src="C:\Users\Admin\OneDrive\Documents\JSPM\WT 25\martin\mapLocation.jpg" alt="Map screenshot" class="rounded-lg w-full">
+    </div>
+
+    <!-- Right: Info Panel -->
+    <div class="space-y-6">
+      <!-- Incident Summary -->
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h2 class="text-lg font-semibold mb-2">Incident Summary</h2>
+        <div class="flex justify-between items-center">
+          <p class="text-sm text-gray-600">Type:</p>
+          <span class="text-red-600 font-semibold text-sm">Critical</span>
+        </div>
+        <p class="text-sm text-gray-600">Timestamp: 2024-07-20 14:30:00 PST</p>
+        <hr class="my-2" />
+        <p class="text-sm font-semibold">Driver: <span class="font-normal">Alice Johnson</span></p>
+        <p class="text-sm font-semibold">Vehicle: <span class="font-normal">Tesla Model 3</span></p>
+        <p class="text-sm font-semibold">License Plate: <span class="font-normal">XYZ-789</span></p>
+      </div>
+
+      <!-- Emergency Actions -->
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h2 class="text-lg font-semibold mb-2">Emergency Actions</h2>
+        <div class="flex flex-col space-y-2">
+          <button class="bg-yellow-500 text-white py-2 px-4 rounded hover:bg-yellow-600 font-semibold">📞 Contact 911</button>
+          <button class="bg-gray-200 text-gray-800 py-2 px-4 rounded hover:bg-gray-300 font-semibold">🚓 Dispatch Local Services</button>
+          <button class="bg-white border border-gray-300 text-gray-700 py-2 px-4 rounded hover:bg-gray-100 font-semibold">📄 View Full Report</button>
+        </div>
+      </div>
+
+      <!-- Event Timeline -->
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h2 class="text-lg font-semibold mb-2">Event Timeline</h2>
+        <ul class="text-sm space-y-2">
+          <li>🕒 14:30:00 – System initiated emergency protocols.</li>
+          <li>🧍 14:29:45 – Driver unresponsive detected.</li>
+          <li>🚗 14:29:30 – Vehicle stopped unexpectedly.</li>
+          <li>📡 14:29:10 – GPS signal lost for 10 seconds.</li>
+          <li>😴 14:28:55 – Drowsiness levels critical.</li>
+          <li>🟢 14:28:00 – Continuous driver monitoring started.</li>
+        </ul>
+      </div>
+
+      <!-- Recent Alerts -->
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h2 class="text-lg font-semibold mb-2">Recent Alerts</h2>
+        <ul class="text-sm space-y-2">
+          <li>⚠️ 14:29:45 – Unconscious driver detected. Initiating emergency procedures.</li>
+          <li>⚠️ 14:29:30 – Vehicle stationary unexpectedly at 34.0522, -118.2437.</li>
+          <li>⚠️ 14:28:30 – Drowsiness level high. Recommendation: take a break.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t py-10 mt-10">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-lg font-semibold mb-4">Team Martin</h2>
+      <form class="flex justify-center items-center gap-2 max-w-sm mx-auto">
+        <input type="email" placeholder="Your email" class="w-full px-4 py-2 border border-gray-300 rounded"/>
+        <button class="bg-orange-400 text-white px-4 py-2 rounded hover:bg-orange-500">Subscribe</button>
+      </form>
+      <p class="text-xs text-gray-500 mt-4">© 2025 Team Martin</p>
+    </div>
+  </footer>
+
+</body>
+</html>
